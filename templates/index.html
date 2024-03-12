@@ -43,9 +43,20 @@
                         <!-- </div> -->
 
                     </div>
+                    <div>
+                        <div class="right-side lg:pr-4">
+                            <!-- welcome user -->
+                            </div>
+                    </div>
                     </form>
                     <div class="right-side lg:pr-4">
-                         <!-- upload -->
+                        <!--<a href="">
+                            <img src="static/images/music-album.png" alt="">
+                        </a>-->
+                        <a href="/profile/{{user.username}}" class="">
+                            Welcome <b name="" class="">{{user.username}}&nbsp; &nbsp; &nbsp;</b>
+                        </a>
+                        <!-- upload -->
                         <a href="#"
                             class="bg-pink-500 flex font-bold hidden hover:bg-pink-600 hover:text-white inline-block items-center lg:block max-h-10 mr-4 px-4 py-2 rounded shado text-white">
                             <ion-icon name="add-circle" class="-mb-1
@@ -178,6 +189,11 @@
                             <ul>
                                 <li><a href="/settings"> Account setting </a> </li>
                                 <li><a href="logout"> Log Out</a></li>
+                                <li><!-- welcome user -->
+                                    <a href="/profile/{{user.username}}" class="">
+                                        Welcome <b name="" class="">{{user.username}}&nbsp; &nbsp; &nbsp;</b>
+                                    </a>
+                                    </li>
                             </ul>
                         </div>
 
